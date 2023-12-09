@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+  /* margin: 0; */
+}
+body{
+  background-image: url(94f0ba7b5b1d5eff1680315c8290c69c.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  animation-name: Two;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+@keyframes Two {
+  0%{background-image: url(659211169ae2c53755904c590b0a6fc9.jpg);}
+  50%{background-image: url(94f0ba7b5b1d5eff1680315c8290c69c.jpg);}
+  100%{background-image: url(a8ccecd8b8df8fc4f7b2d0435276a2fd.jpg);}
+}
+
+#title{
+  font-size: 5lvw;
+  color: rgb(212, 0, 255);
+  text-align: center;
+
+  animation-name: One;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+@keyframes One {
+  0%{color: rgb(221, 65, 221);}
+  50%{ color: blueviolet;}
+  100%{color: purple;}
+}
+.start{
+  background-color: plum;
+  color: purple;
+  border: none;
+  font-size: 25px;
+  padding:10px 30px;
+  margin-top: 35vh;
+  margin-left: 40vw;
+  font-style: oblique;
+}
+.start:hover{
+  background-color: rgb(224, 104, 224);
+  color: rgb(185, 4, 185);
+}
+.start:hover:active{
+  background-color: rgb(245, 55, 245);
+  color: rgb(94, 3, 94);
+}
+.clear{
+  opacity: 0;
+}
+.operators{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20vh;
+  margin-bottom: 5vh;
+}
+.operator{
+  background-color: purple;
+  color: plum;
+  border: none;
+  font-size: 25px;
+  width: 23vw;
+  height: 10vh;
+  font-style: oblique;
+  border-radius: 5px;
+}
+.operator:hover{
+  background-color:rgb(122, 35, 122);
+}
+.operator:hover:active{
+  background-color: rgb(83, 3, 83);
+}
+/* .addition:hover:active{} */
+.question{
+  display: inline;
+  font-size: 3em;
+  color: rgb(212, 0, 255);
+}
+.answer-box{
+opacity: 0;
+}
+.visible{
+  opacity: 1;
+  width: 65px;
+  height: 60px;
+  font-size: 25px;
+  background-color: plum;
+  color: rgb(212, 0, 255);
+  border: none;
+  border-radius: 0%5px;
+}
+.visible::placeholder{
+  color: rgb(212, 0, 255);
+}
+.submit{
+  background-color: purple;
+  color: plum;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+#feedback{
+  font-size: 1.5em;
+  color:white ;
+}
+h2{
+  font-size: 2em;
+  color: rgb(212, 0, 255);
+}
+.score{
+  font-size: 2em;
+  color: rgb(212, 0, 255);
+}
+.restart{
+  background-color: purple;
+  color: plum;
+  font-size: 20px;
+  padding: 10px;
+  border: none; 
+  border-radius: 5px; 
+}
